@@ -1,0 +1,52 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100vh;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 23px;
+}
+
+div {
+    width: 100px;
+    height: 60px;
+
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: -3px 3px grey;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button:hover {
+    transition: 0.15s ease-in;
+    scale: 125%;
+}
+
+.button:active {
+    position: relative;
+    left: -3px;
+    bottom: -3px;
+    box-shadow: none;
+    transition: none;
+}
+
+.noselect {
+    user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.notouch {
+    background-color: red;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+}
+
+.notouch:active {
+    display: none;
+}
